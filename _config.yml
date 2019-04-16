@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Name That Song
-destination: public
+destination: docs
 source: src
 theme: minima
 email: name_that_song@jakobo.eu
