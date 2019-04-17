@@ -1,14 +1,60 @@
 {
-  "Garden Birds": [
-    "dunnock", "goldfinch", "chaffinch", "robin", "blackbird", "song_thrush", "mistle_thrush", "blue_tit", "great_tit"
-  ],
-  "Warblers": [
-    "blackcap", "cettis_warbler", "chiffchaff", "dartford_warbler", "garden_warbler", "grasshoper_warbler", "less_whitethroat", "reed_warbler", "sedge_warbler", "whitethroat", "willow_warbler", "wood_warbler"
-  ],
-  "Thrushes": [
-    "blackbird", "fieldfare", "mistle_thrush", "redwing", "ring_ouzel", "song_thrush"
-  ],
-  "Tits": [
-    "blue_tit", "coal_tit", "great_tit", "marsh_tit", "willow_tit"
+  "quizes": [
+    {
+      "id": "garden_birds",
+      "name": "Garden Birds",
+      "species": [
+        "dunnock",
+        "goldfinch",
+        "chaffinch",
+        "robin",
+        "blackbird",
+        "song_thrush",
+        "mistle_thrush",
+        "blue_tit",
+        "great_tit"
+      ]
+    },
+    {
+      "id": "warblers",
+      "name": "Warblers",
+      "species": [
+        "blackcap",
+        "cettis_warbler",
+        "chiffchaff",
+        "dartford_warbler",
+        "garden_warbler",
+        "grasshoper_warbler",
+        "less_whitethroat",
+        "reed_warbler",
+        "sedge_warbler",
+        "whitethroat",
+        "willow_warbler",
+        "wood_warbler"
+      ]
+    },
+    {
+      "id": "thrushes",
+      "name": "Thrushes",
+      "species": [
+        "blackbird",
+        "fieldfare",
+        "mistle_thrush",
+        "redwing",
+        "ring_ouzel",
+        "song_thrush"
+      ]
+    },
+    {
+      "id": "tits",
+      "name": "Tits",
+      "species": [
+        "blue_tit",
+        "coal_tit",
+        "great_tit",
+        "marsh_tit",
+        "willow_tit"
+      ]
+    }
   ]
 }
