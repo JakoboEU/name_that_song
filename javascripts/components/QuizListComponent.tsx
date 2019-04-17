@@ -3,10 +3,10 @@ import * as React from "react";
 import {QuizComponent} from "./QuizComponent";
 
 export interface QuizListComponentProps {
-
+    onClick: (name: string, species: Array<String>) => void
 }
 
-export interface QuizCollection {
+export interface QuizListComponentState {
     quizes: Array<QuizDefinition>
 }
 
@@ -16,7 +16,7 @@ export interface QuizDefinition {
     species: Array<string>
 }
 
-export class QuizListComponent extends React.Component<QuizListComponentProps, QuizCollection> {
+export class QuizListComponent extends React.Component<QuizListComponentProps, QuizListComponentState> {
     constructor(props: QuizListComponentProps) {
         super(props);
         this.state = { quizes: [] };
@@ -29,7 +29,7 @@ export class QuizListComponent extends React.Component<QuizListComponentProps, Q
 
     render() {
         const quizes = this.state.quizes.map(quiz =>
-            <QuizComponent key={quiz.id} name={quiz.name} species={quiz.species} />
+            <QuizComponent key={quiz.id} name={quiz.name} species={quiz.species} onClick={this.props.onClick} />
         );
         return <div className="quizes">
             <ul className="quizes">
