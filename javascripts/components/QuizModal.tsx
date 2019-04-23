@@ -1,5 +1,6 @@
 import * as React from "react";
 import ReactPlayer from 'react-player'
+import QuizButton from "./QuizButton"
 
 export interface QuizModalProps {
     show: boolean
@@ -43,8 +44,8 @@ export class QuizModal extends React.Component<QuizModalProps, QuizModalState> {
         return bird;
     }
 
-    guessSong(guessedBird: Bird): void {
-        console.log("Guessed " + guessedBird.species + ", actual " + this.state.currentBird.species)
+    guessSong(guessedBirdId: string): boolean {
+        return guessedBirdId == this.state.currentBird.id
     }
 
     componentWillMount() {
@@ -66,7 +67,7 @@ export class QuizModal extends React.Component<QuizModalProps, QuizModalState> {
     render() {
         if (this.props.show) {
             const selections = this.props.quizSpecies.map(birdId => this.fetchBird(birdId, this.state.birdList.birds))
-                .map(bird => <li key={bird.id} className="quiz"><a key={bird.id} onClick={(e) => this.guessSong.bind(this)(bird)}>{bird.species}</a></li>)
+                .map(bird => <QuizButton key={bird.id} speciesId={bird.id} speciesName={bird.species} onClick={this.guessSong.bind(this)}></QuizButton>)
             const songUrl = "/assets/data/" + this.state.currentBird.song
             return <div className="quiz-modal">
                 <span className="header"><a className="close" onClick={this.props.onClose}>x</a></span>

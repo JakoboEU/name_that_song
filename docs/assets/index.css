@@ -49,3 +49,11 @@ a li.quiz {
     text-decoration: none;
     color: black;
 }
+
+.correct {
+    background: green;
+}
+
+.wrong {
+    background: red;
+}
