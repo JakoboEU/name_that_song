@@ -13,6 +13,7 @@ li.quiz {
     list-style: none;
     margin: 0 0 5px 5px;
     text-align: center;
+    display: inline-block;
 }
 
 a li.quiz {
@@ -27,7 +28,7 @@ a li.quiz {
     border: 1px solid black;
     background: white;
     z-index: 999;
-    width: 350px;
+    min-width: 350px;
     min-height: 500px;
 }
 
@@ -44,14 +45,15 @@ a li.quiz {
     margin-bottom: 10px;
 }
 
-.quiz-modal .header a.close {
+.quiz-modal .header a {
     text-decoration: none;
     color: black;
+    border: 1px solid black;
+    margin: 2px;
+    padding: 2px;
 }
 
 .quiz-modal .header a.next {
-    text-decoration: none;
-    color: black;
     float: right;
 }
 

@@ -3,210 +3,264 @@
     "id": "dunnock",
     "species": "Dunnock",
     "family": "Accentor",
-    "song": "accentors/dunnock.mp3"
+    "song": ["accentors/dunnock.mp3"]
   },
   {
     "id": "brambling",
     "species": "Brambling",
     "family": "Finch",
-    "song": "finches/brambling.mp3"
+    "song": ["finches/brambling.mp3"]
   },
   {
     "id": "bullfinch",
     "species": "Bullfinch",
     "family": "Finch",
-    "song": "finches/bullfinch.mp3"
+    "song": ["finches/bullfinch.mp3"]
   },
   {
     "id": "chaffinch",
     "species": "Chaffinch",
     "family": "Finch",
-    "song": "finches/chaffinch.mp3"
+    "song": ["finches/chaffinch.mp3"]
   },
   {
     "id": "common_redpoll",
     "species": "Common Redpoll",
     "family": "Finch",
-    "song": "finches/common_redpoll.mp3"
+    "song": ["finches/common_redpoll.mp3"]
   },
   {
     "id": "goldfinch",
     "species": "Goldfinch",
     "family": "Finch",
-    "song": "finches/goldfinch.mp3"
+    "song": ["finches/goldfinch.mp3"]
   },
   {
     "id": "greenfinch",
     "species": "Greenfinch",
     "family": "Finch",
-    "song": "finches/greenfinch.mp3"
+    "song": ["finches/greenfinch.mp3"]
   },
   {
     "id": "lesser_redpoll",
     "species": "Lesser Redpoll",
     "family": "Finch",
-    "song": "finches/lesser_redpoll.mp3"
+    "song": ["finches/lesser_redpoll.mp3"]
   },
   {
     "id": "siskin",
     "species": "Siskin",
     "family": "Finch",
-    "song": "finches/siskin.mp3"
+    "song": ["finches/siskin.mp3"]
   },
   {
     "id": "pied_flycatcher",
     "species": "Pied Flycatcher",
     "family": "Old World Flycatcher",
-    "song": "old_world_flycatchers/pied_flycatcher.mp3"
+    "song": ["old_world_flycatchers/pied_flycatcher.mp3"]
   },
   {
     "id": "robin",
     "species": "Robin",
     "family": "Old World Flycatcher",
-    "song": "old_world_flycatchers/robin.mp3"
+    "song": ["old_world_flycatchers/robin.mp3"]
   },
   {
     "id": "spotted_flycatcher",
     "species": "Spotted Flycatcher",
     "family": "Old World Flycatcher",
-    "song": "old_world_flycatchers/spotted_flycatcher.mp3"
+    "song": ["old_world_flycatchers/spotted_flycatcher.mp3"]
   },
   {
     "id": "blackbird",
     "species": "Blackbird",
     "family": "Thrush",
-    "song": "thrushes/blackbird.mp3"
+    "song": ["thrushes/blackbird.mp3"]
   },
   {
     "id": "fieldfare",
     "species": "Fieldfare",
     "family": "Thrush",
-    "song": "thrushes/fieldfare.mp3"
+    "song": ["thrushes/fieldfare.mp3"]
   },
   {
     "id": "redwing",
     "species": "Redwing",
     "family": "Thrush",
-    "song": "thrushes/redwing.mp3"
+    "song": ["thrushes/redwing.mp3"]
   },
   {
     "id": "ring_ouzel",
     "species": "Ring Ouzel",
     "family": "Thrush",
-    "song": "thrushes/ring_ouzel.mp3"
+    "song": ["thrushes/ring_ouzel.mp3"]
   },
   {
     "id": "song_thrush",
     "species": "Song Thrush",
     "family": "Thrush",
-    "song": "thrushes/song_thrush.mp3"
+    "song": ["thrushes/song_thrush.mp3"]
   },
   {
     "id": "mistle_thrush",
     "species": "Mistle Thrush",
     "family": "Thrush",
-    "song": "thrushes/mistle_thrush.mp3"
+    "song": ["thrushes/mistle_thrush.mp3"]
   },
   {
     "id": "blue_tit",
     "species": "Blue Tit",
     "family": "Tit",
-    "song": "tits/blue_tit.mp3"
+    "song": ["tits/blue_tit.mp3"]
   },
   {
     "id": "coal_tit",
     "species": "Coal Tit",
     "family": "Tit",
-    "song": "tits/coal_tit.mp3"
+    "song": ["tits/coal_tit.mp3"]
   },
   {
     "id": "great_tit",
     "species": "Great Tit",
     "family": "Tit",
-    "song": "tits/great_tit.mp3"
+    "song": ["tits/great_tit.mp3"]
   },
   {
     "id": "marsh_tit",
     "species": "Marsh Tit",
     "family": "Tit",
-    "song": "tits/marsh_tit.mp3"
+    "song": ["tits/marsh_tit.mp3"]
   },
   {
     "id": "willow_tit",
     "species": "Willow Tit",
     "family": "Tit",
-    "song": "tits/willow_tit.mp3"
+    "song": ["tits/willow_tit.mp3"]
   },
   {
     "id": "blackcap",
     "species": "Blackcap",
     "family": "Warbler",
-    "song": "warblers/blackcap.mp3"
+    "song": ["warblers/blackcap.mp3"]
   },
   {
     "id": "cettis_warbler",
     "species": "Cetti's Warbler",
     "family": "Warbler",
-    "song": "warblers/cettis_warbler.mp3"
+    "song": ["warblers/cettis_warbler.mp3"]
   },
   {
     "id": "chiffchaff",
     "species": "Chiffchaff",
     "family": "Warbler",
-    "song": "warblers/chiffchaff.mp3"
+    "song": ["warblers/chiffchaff.mp3"]
   },
   {
     "id": "dartford_warbler",
     "species": "Dartford Warbler",
     "family": "Warbler",
-    "song": "warblers/dartford_warbler.mp3"
+    "song": ["warblers/dartford_warbler.mp3"]
   },
   {
     "id": "garden_warbler",
     "species": "Garden Warbler",
     "family": "Warbler",
-    "song": "warblers/garden_warbler.mp3"
+    "song": ["warblers/garden_warbler.mp3"]
   },
   {
     "id": "lesser_whitethroat",
     "species": "Lesser Whitethroat",
     "family": "Warbler",
-    "song": "warblers/lesser_whitethroat.mp3"
+    "song": ["warblers/lesser_whitethroat.mp3"]
   },
   {
     "id": "reed_warbler",
     "species": "Reed Warbler",
     "family": "Warbler",
-    "song": "warblers/reed_warbler.mp3"
+    "song": ["warblers/reed_warbler.mp3"]
   },
   {
     "id": "sedge_warbler",
     "species": "Sedge Warbler",
     "family": "Warbler",
-    "song": "warblers/sedge_warbler.mp3"
+    "song": ["warblers/sedge_warbler.mp3"]
   },
   {
     "id": "whitethroat",
     "species": "Whitethroat",
     "family": "Warbler",
-    "song": "warblers/whitethroat.mp3"
+    "song": ["warblers/whitethroat.mp3"]
   },
   {
     "id": "willow_warbler",
     "species": "Willow Warbler",
     "family": "Warbler",
-    "song": "warblers/willow_warbler.mp3"
+    "song": ["warblers/willow_warbler.mp3"]
   },
   {
     "id": "wood_warbler",
     "species": "Wood Warbler",
     "family": "Warbler",
-    "song": "warblers/wood_warbler.mp3"
+    "song": ["warblers/wood_warbler.mp3"]
   },
   {
     "id": "grasshoper_warbler",
     "species": "Grasshoper Warbler",
     "family": "Warbler",
-    "song": "warblers/grasshoper_warbler.mp3"
+    "song": ["warblers/grasshoper_warbler.mp3"]
+  },
+  {
+    "id": "goldcrest",
+    "species": "Goldcrest",
+    "family": "Kinglets and Firecrests",
+    "song": ["kinglets/goldcrest1.mp3", "kinglets/goldcrest2.mp3"]
+  },
+  {
+    "id": "great_spotted_woodpecker",
+    "species": "Great Spotted Woodpecker",
+    "family": "Woodpecker",
+    "song": ["woodpeckers/great_spotted_woodpecker.mp3"]
+  },
+  {
+    "id": "lesser_spotted_woodpecker",
+    "species": "Lesser Spotted Woodpecker",
+    "family": "Woodpecker",
+    "song": ["woodpeckers/lesser_spotted_woodpecker.mp3"]
+  },
+  {
+    "id": "green_woodpecker",
+    "species": "Green Woodpecker",
+    "family": "Woodpecker",
+    "song": ["woodpeckers/green_woodpecker.mp3"]
+  },
+  {
+    "id": "nightingale",
+    "species": "Nightingale",
+    "family": "Chats",
+    "song": ["chats/nightingale.mp3"]
+  },
+  {
+    "id": "nuthatch",
+    "species": "Nuthatch",
+    "family": "Nuthatches",
+    "song": ["nuthatches/nuthatch.mp3"]
+  },
+  {
+    "id": "treecreeper",
+    "species": "Treecreeper",
+    "family": "Treecreepers",
+    "song": ["treecreepers/treecreeper.mp3"]
+  },
+  {
+    "id": "wheatear",
+    "species": "Wheatear",
+    "family": "Chats",
+    "song": ["chats/wheatear.mp3"]
+  },
+  {
+    "id": "wren",
+    "species": "Wren",
+    "family": "Wrens",
+    "song": ["wrens/wren.mp3"]
   }
 ]}

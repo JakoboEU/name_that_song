@@ -55,6 +55,32 @@
         "marsh_tit",
         "willow_tit"
       ]
+    },
+    {
+      "id": "woodland",
+      "name": "Woodland Birds",
+      "species": [
+        "blackbird",
+        "blackcap",
+        "blue_tit",
+        "great_tit",
+        "brambling",
+        "chaffinch",
+        "chiffchaff",
+        "fieldfare",
+        "goldcrest",
+        "great_spotted_woodpecker",
+        "lesser_spotted_woodpecker",
+        "green_woodpecker",
+        "nightingale",
+        "nuthatch",
+        "siskin",
+        "treecreeper",
+        "wheatear",
+        "wren",
+        "wood_warbler",
+        "willow_warbler"
+      ]
     }
   ]
 }
