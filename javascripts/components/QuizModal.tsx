@@ -10,6 +10,7 @@ export interface QuizModalProps {
 
 export interface QuizModalState {
     birdList: BirdCollection
+    currentBird: Bird
 }
 
 export interface BirdCollection {
@@ -25,25 +26,25 @@ export interface Bird {
 export class QuizModal extends React.Component<QuizModalProps, QuizModalState> {
     constructor(props: QuizModalProps) {
         super(props);
-        this.state = { birdList: {birds: []}};
+        this.state = { birdList: {birds: []}, currentBird: null};
     }
 
-    nextRandomSpecies(): string {
-        const max = this.props.quizSpecies.length
+    randomEntry(values: Array<string>): string {
+        const max = values.length
         const index = Math.floor(Math.random() * Math.floor(max));
-        return this.props.quizSpecies[index];
+        return values[index];
     }
 
-    fetchBird(birdId: string): Bird {
-        const bird = this.state.birdList.birds.find(bird => bird.id == birdId)
+    fetchBird(birdId: string, birds: Array<Bird>): Bird {
+        const bird = birds.find(bird => bird.id == birdId)
         if (!bird) {
             console.error("Failed to find bird " + birdId)
         }
         return bird;
     }
 
-    guessSong(guessedBird: Bird, actualBird: Bird): void {
-        console.log("Guessed " + guessedBird.species + ", actual " + actualBird.species)
+    guessSong(guessedBird: Bird): void {
+        console.log("Guessed " + guessedBird.species + ", actual " + this.state.currentBird.species)
     }
 
     componentWillMount() {
@@ -52,12 +53,21 @@ export class QuizModal extends React.Component<QuizModalProps, QuizModalState> {
             .then( birds => this.setState({birdList: birds}));
     }
 
+    shouldComponentUpdate(nextProps: QuizModalProps, nextState: QuizModalState): boolean {
+        if (nextProps.quizSpecies.length > 0) {
+            if (nextProps.quizName != this.props.quizName || !nextState.currentBird) {
+                const nextBird = this.fetchBird(this.randomEntry(nextProps.quizSpecies), nextState.birdList.birds)
+                nextState.currentBird = nextBird;
+            }
+        }
+        return true;
+    }
+
     render() {
         if (this.props.show) {
-            const currentBird = this.fetchBird(this.nextRandomSpecies())
-            const selections = this.props.quizSpecies.map(birdId => this.fetchBird(birdId))
-                .map(bird => <li key={bird.id} className="quiz"><a key={bird.id} onClick={(e) => this.guessSong(bird, currentBird)}>{bird.species}</a></li>)
-            const songUrl = "/assets/data/" + currentBird.song
+            const selections = this.props.quizSpecies.map(birdId => this.fetchBird(birdId, this.state.birdList.birds))
+                .map(bird => <li key={bird.id} className="quiz"><a key={bird.id} onClick={(e) => this.guessSong.bind(this)(bird)}>{bird.species}</a></li>)
+            const songUrl = "/assets/data/" + this.state.currentBird.song
             return <div className="quiz-modal">
                 <span className="header"><a className="close" onClick={this.props.onClose}>x</a></span>
                 <ReactPlayer url={songUrl} playing />
