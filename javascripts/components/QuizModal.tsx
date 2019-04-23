@@ -56,10 +56,10 @@ export class QuizModal extends React.Component<QuizModalProps, QuizModalState> {
         if (this.props.show) {
             const currentBird = this.fetchBird(this.nextRandomSpecies())
             const selections = this.props.quizSpecies.map(birdId => this.fetchBird(birdId))
-                .map(bird => <li key={bird.id}><a key={bird.id} onClick={(e) => this.guessSong(bird, currentBird)}>{bird.species}</a></li>)
+                .map(bird => <li key={bird.id} className="quiz"><a key={bird.id} onClick={(e) => this.guessSong(bird, currentBird)}>{bird.species}</a></li>)
             const songUrl = "/assets/data/" + currentBird.song
-            return <div>
-                <a className="close" onClick={this.props.onClose}>x</a>
+            return <div className="quiz-modal">
+                <span className="header"><a className="close" onClick={this.props.onClose}>x</a></span>
                 <ReactPlayer url={songUrl} playing />
                 {selections}
             </div>

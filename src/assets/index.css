@@ -19,3 +19,33 @@ a li.quiz {
     color: black;
     text-underline: none;
 }
+
+.quiz-modal {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    background: white;
+    z-index: 999;
+    width: 350px;
+    min-height: 500px;
+}
+
+.quiz-modal div {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+
+.modal .header {
+    padding: 10px;
+    border-bottom: 1px solid black;
+    display: block;
+}
+
+.modal .header a.close {
+    text-decoration: none;
+    color: black;
+}
