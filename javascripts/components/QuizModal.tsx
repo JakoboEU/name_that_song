@@ -21,7 +21,7 @@ export interface BirdCollection {
 export interface Bird {
     id: string,
     species: string,
-    song: string
+    song: Array<string>
 }
 
 export class QuizModal extends React.Component<QuizModalProps, QuizModalState> {
@@ -72,7 +72,7 @@ export class QuizModal extends React.Component<QuizModalProps, QuizModalState> {
         if (this.props.show) {
             const selections = this.props.quizSpecies.map(birdId => this.fetchBird(birdId, this.state.birdList.birds))
                 .map(bird => <QuizButton key={bird.id} speciesId={bird.id} speciesName={bird.species} onClick={this.guessSong.bind(this)}></QuizButton>)
-            const songUrl = "/assets/data/" + this.state.currentBird.song
+            const songUrl = "/assets/data/" + this.randomEntry(this.state.currentBird.song)
             return <div className="quiz-modal">
                 <span className="header">
                     <a className="close" onClick={this.props.onClose}>x</a>
