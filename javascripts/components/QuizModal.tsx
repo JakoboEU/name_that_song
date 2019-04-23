@@ -54,6 +54,10 @@ export class QuizModal extends React.Component<QuizModalProps, QuizModalState> {
             .then( birds => this.setState({birdList: birds}));
     }
 
+    nextBird() {
+        this.setState({currentBird: null})
+    }
+
     shouldComponentUpdate(nextProps: QuizModalProps, nextState: QuizModalState): boolean {
         if (nextProps.quizSpecies.length > 0) {
             if (nextProps.quizName != this.props.quizName || !nextState.currentBird) {
@@ -70,7 +74,10 @@ export class QuizModal extends React.Component<QuizModalProps, QuizModalState> {
                 .map(bird => <QuizButton key={bird.id} speciesId={bird.id} speciesName={bird.species} onClick={this.guessSong.bind(this)}></QuizButton>)
             const songUrl = "/assets/data/" + this.state.currentBird.song
             return <div className="quiz-modal">
-                <span className="header"><a className="close" onClick={this.props.onClose}>x</a></span>
+                <span className="header">
+                    <a className="close" onClick={this.props.onClose}>x</a>
+                    <a className="next" onClick={this.nextBird.bind(this)}>Next</a>
+                </span>
                 <ReactPlayer url={songUrl} playing />
                 {selections}
             </div>
